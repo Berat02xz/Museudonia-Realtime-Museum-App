@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 
-//GLAVNA FUNKCIJA
+//MAIN CLASS
 @Component
 public class PipeAndFilter {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class PipeAndFilter {
 
         System.out.println("-------------------Museum Data extracted from the JSON document:");
         for (Museum museum : museums) {
-
+            //tuka moze da se stavi kod za import vo DB ako sakame
             System.out.println(museum);
         }
     }

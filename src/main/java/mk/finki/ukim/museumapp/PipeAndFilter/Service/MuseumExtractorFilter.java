@@ -6,6 +6,7 @@ import mk.finki.ukim.museumapp.PipeAndFilter.model.Museum;
 import java.util.ArrayList;
 import java.util.List;
 
+//-----MUSEUM DATA EXTRACTOR FROM JSON FILE
 public class MuseumExtractorFilter implements Filter {
     private Filter nextFilter;
     private List<Museum> museums = new ArrayList<>();
