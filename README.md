@@ -10,7 +10,7 @@
 **Автори:**
 - Andrej Velickovski (211109)
 - Viktor Sibinovikj (195120)
-- Berat Ahmteaj (216130)
+- Berat Ahmetaj (216130)
 
 
 **Ментори:** 
