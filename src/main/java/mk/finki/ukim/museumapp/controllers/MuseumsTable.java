@@ -25,7 +25,7 @@ public class MuseumsTable {
         }
 
 
-        @GetMapping("/index.html")
+        @GetMapping
         public String getIndex(Model model) {
             List<Museum> museums = MuseumExtractorFilter.getMuseums();
             model.addAttribute("museums", museums);
