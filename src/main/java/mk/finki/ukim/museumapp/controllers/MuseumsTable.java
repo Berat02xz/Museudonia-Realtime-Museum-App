@@ -31,4 +31,14 @@ public class MuseumsTable {
             model.addAttribute("museums", museums);
             return "index";
         }
+
+        @GetMapping("/search")
+        String getSearch(Model model, @RequestParam String search) {
+            List<Museum> filteredMuseums = MuseumExtractorFilter.searchmuseums(search);
+            model.addAttribute("museums", filteredMuseums);
+            return "index";
+        }
+
+
+
 }

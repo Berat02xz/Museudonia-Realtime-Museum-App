@@ -15,6 +15,7 @@
       "tags": {
         "contact:phone": "+38923117669",
         "fee": "yes",
+        "charge": "50 MKD",
         "name": "Природонаучен Музеј",
         "name:en": "Macedonian Museum of Natural History",
         "name:pl": "Muzeum Przyrodnicze",
@@ -35,6 +36,9 @@
         "name": "Музеј на град Берово",
         "name:en": "Berovo Town Museum",
         "tourism": "museum",
+        "fee": "yes",
+        "charge": "50 MKD",
+        "opening_hours": "Mo-Su 09:00-16:00",
         "website": "http://www.berovo.gov.mk/index.php?option=com_content&view=article&id=76&Itemid=117"
       }
     },
@@ -46,7 +50,9 @@
       "tags": {
         "name": "Музеј Галерија Кавадарци",
         "name:en": "Muzej Galerija Kavadarci",
-        "tourism": "museum"
+        "tourism": "museum",
+        "fee": "yes",
+        "charge": "70 MKD"
       }
     },
     {

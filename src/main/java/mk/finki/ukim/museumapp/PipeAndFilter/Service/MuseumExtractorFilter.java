@@ -15,6 +15,17 @@ public class MuseumExtractorFilter implements Filter {
         this.nextFilter = nextFilter;
     }
 
+    public static List<Museum> searchmuseums(String input) {
+        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> filteredMuseums = new ArrayList<>();
+        for (Museum museum : museums) {
+            if (museum.getName().toLowerCase().contains(input.toLowerCase())) {
+                filteredMuseums.add(museum);
+            }
+        }
+        return filteredMuseums;
+    }
+
     @Override
     public void process(Object data) {
         JsonNode jsonData = (JsonNode) data;
@@ -43,18 +54,18 @@ public class MuseumExtractorFilter implements Filter {
         JsonNode tags = node.get("tags");
 
         return new Museum(
-                tags.has("name") ? tags.get("name").asText() : null,
+                tags.has("name") ? tags.get("name").asText() : "Unknown",
                 node.has("lat") ? node.get("lat").asDouble() : 0.0,
                 node.has("lon") ? node.get("lon").asDouble() : 0.0,
-                tags.has("addr:street") ? tags.get("addr:street").asText() : null,
-                tags.has("email") ? tags.get("email").asText() : null,
-                tags.has("internet_access") ? tags.get("internet_access").asText() : null,
-                tags.has("wikidata") ? tags.get("wikidata").asText() : null,
-                tags.has("opening_hours") ? tags.get("opening_hours").asText() : null,
-                tags.has("contact:phone") ? tags.get("contact:phone").asText() : null,
-                tags.has("fee") ? tags.get("fee").asText() : null,
-                tags.has("charge") ? tags.get("charge").asText() : null,
-                tags.has("website") ? tags.get("website").asText() : null
+                tags.has("addr:street") ? tags.get("addr:street").asText() : "street",
+                tags.has("email") ? tags.get("email").asText() : "Unknown",
+                tags.has("internet_access") ? tags.get("internet_access").asText() : "yes",
+                tags.has("wikidata") ? tags.get("wikidata").asText() : "Unknown",
+                tags.has("opening_hours") ? tags.get("opening_hours").asText() : "Unknown",
+                tags.has("contact:phone") ? tags.get("contact:phone").asText() : "Unknown",
+                tags.has("fee") ? tags.get("fee").asText() : "Unknown",
+                tags.has("charge") ? tags.get("charge").asText() : "Unknown",
+                tags.has("website") ? tags.get("website").asText() : "Unknown"
         );
     }
 }

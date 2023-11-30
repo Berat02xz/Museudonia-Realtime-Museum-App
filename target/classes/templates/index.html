@@ -7,9 +7,52 @@
     <title>Museum Main Page</title>
 </head>
 <body>
+<style>
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+    .card {
+        border-radius: 10px;
+        border: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    /* make the cards look nice */
+    .card:hover {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .text1 {
+        font-size: 14px;
+        color: #a2a2a2;
+    }
+    
+    /* make the footer nice */
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        color: #a2a2a2;
+        text-align: center;
+    }
+
+    .form-inline {
+        display: inline-block;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
 
 
-<!-- a navbar in the middle with searching bar -->
+</style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Museum Main Page</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -24,6 +67,14 @@
                        name="search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+            <!-- buttons for selecting options for search -->
+            <!-- something that says filter by -->
+            <a class="nav-item nav-link active" href="#">Filter by <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">All Museums</a>
+            <a class="nav-item nav-link" href="#">Free entry</a>
+            <a class="nav-item nav-link" href="#">Internet Access</a>
+            <a class="nav-item nav-link" href="#">Open Now</a>
+            <a class="nav-item nav-link" href="#">Skopje</a>
         </div>
     </div>
 <a> <button type="button" class="btn btn-primary" onclick="location.href='edit.html'">Login</button></a>
@@ -40,7 +91,7 @@
                     <div class="d-flex flex-row align-items-center">
                         <div class="icon"> <i class="bx bxl-dribbble"></i> </div>
                         <div class="ms-2 c-details">
-                            <h6 class="mb-0" th:text="${museum.street}"></h6> <span th:text="${museum.fee}">fee:</span> <span th:text="${museum.charge}">Charge:</span>
+                            <h6 class="mb-0" th:text="${museum.street}"></h6> <span th:text="${museum.charge}">Charge:</span>
                         </div>
                     </div>
                     <div class="badge"> <span th:text="${museum.wikidata}"></span> </div>
@@ -49,9 +100,9 @@
                     <h3 class="heading" th:text="${museum.name}"></h3>
                     <div class="mt-5">
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" role="progressbar" th:style="${museum.fee == 'yes'} ? 'width: 0%' : 'width: 100%'" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span style="color: #e9ecef">FREE ENTRY</span></div>
                         </div>
-                        <div class="mt-3"> <span class="text1">40 Reviews</span> </div>
+                        <div class="mt-3"> <span class="text1">OPEN NOW</span> </div>
                         <div class="mt-3"> <span class="text1" th:text="${museum.email}"></span> </div>
                         <div class="mt-3"> <span class="text1" th:text="${museum.internetAccess}"></span> </div>
                         <div class="mt-3"> <span class="text1" th:text="${museum.openingHours}"></span> </div>
@@ -64,10 +115,9 @@
         </div>
 </div>
 
-
-
-
-
-
+<!-- footer that says made with love emoji -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0);">
+        Made with ❤️ by   <a class="text-dark" href="https://github.com/BeratAhmetaj/MuseumApp">FINKI Students</a> </div>
 </body>
 </html>

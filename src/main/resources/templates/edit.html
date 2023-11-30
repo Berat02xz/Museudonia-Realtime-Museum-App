@@ -9,7 +9,7 @@
 <body>
 <style>
     .container {
-        margin-top: 20px;
+        margin-top: 50px;
     }
     /* Make table data so that text box has limit*/
     td {
@@ -18,6 +18,60 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+
+    /* make table look nice */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    /* make table header look nice */
+    th {
+        text-align: left;
+        padding: 16px;
+    }
+
+    /* make table data look nice */
+    td {
+        text-align: left;
+        padding: 16px;
+    }
+
+    /*make table from start to end of screen */
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+    }
+
+    /*make table striped */
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    /* make table hoverable */
+    .table-hover tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+
+    /* make table responsive */
+    @media screen and (max-width: 768px) {
+        .table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+        .table-responsive.table-bordered {
+            border: 0;
+        }
+    }
+
+
+
 
 </style>
 
