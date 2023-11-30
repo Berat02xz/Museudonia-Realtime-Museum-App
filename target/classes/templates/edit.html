@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Museum Main Page</title>
+</head>
+<body>
+<style>
+    .container {
+        margin-top: 20px;
+    }
+    /* Make table data so that text box has limit*/
+    td {
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+</style>
+
+<!-- Showing all museums data as cards css -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Museums</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a th:href="@{/museums/create}" class="btn btn-primary">Create Museum</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <tr>
+                    <th>Name</th>
+                    <th>street</th>
+                    <th>email</th>
+                    <th>internetAccess</th>
+                    <th>openingHours</th>
+                    <th>phone</th>
+                    <th>fee</th>
+                    <th>wikidata</th>
+                    <th>charge</th>
+                    <th>website</th>
+                    <th>Actions</th>
+                </tr>
+                <tr th:each="museum : ${museums}">
+                    <td th:text="${museum.name}"></td>
+                    <td th:text="${museum.street}"></td>
+                    <td th:text="${museum.email}"></td>
+                    <td th:text="${museum.internetAccess}"></td>
+                    <td th:text="${museum.openingHours}"></td>
+                    <td th:text="${museum.phone}"></td>
+                    <td th:text="${museum.fee}"></td>
+                    <td th:text="${museum.wikidata}"></td>
+                    <td th:text="${museum.charge}"></td>
+                    <td th:text="${museum.website}"></td>
+                    <td>
+                        <a th:href="@{/museums/edit/{id}(id=${museum.id})}" class="btn btn-primary">Edit</a> </br>
+                        <a th:href="@{/museums/delete/{id}(id=${museum.id})}" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -9,7 +9,7 @@ import java.util.List;
 //-----MUSEUM DATA EXTRACTOR FROM JSON FILE
 public class MuseumExtractorFilter implements Filter {
     private Filter nextFilter;
-    private List<Museum> museums = new ArrayList<>();
+    private static List<Museum> museums = new ArrayList<>();
 
     public MuseumExtractorFilter(Filter nextFilter) {
         this.nextFilter = nextFilter;
@@ -20,10 +20,11 @@ public class MuseumExtractorFilter implements Filter {
         JsonNode jsonData = (JsonNode) data;
         JsonNode elements = jsonData.get("elements");
 
+
         for (JsonNode element : elements) {
-            if (element.has("type")) {
-                String elementType = element.get("type").asText();
-                if ("node".equals(elementType) || "way".equals(elementType)) {
+            if (element.has("tags")) {
+                JsonNode tags = element.get("tags");
+                if (tags.has("tourism") && tags.get("tourism").asText().equals("museum")) {
                     museums.add(createMuseum(element));
                 }
             }
@@ -34,7 +35,7 @@ public class MuseumExtractorFilter implements Filter {
         }
     }
 
-    public List<Museum> getMuseums() {
+    public static List<Museum> getMuseums() {
         return museums;
     }
 

@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -27,6 +28,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -34,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/berat/Documents/GitHub/MuseumApp/MuseumApp/pom.xml",
+    "last_opened_file_path": "C:/Users/berat/Documents/GitHub/FINKI/VP/LAB1/LAB1/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,7 +87,11 @@
       <workItem from="1699194506809" duration="2852000" />
       <workItem from="1699204707548" duration="5185000" />
       <workItem from="1699288130285" duration="718000" />
-      <workItem from="1699388119499" duration="1243000" />
+      <workItem from="1699388119499" duration="1872000" />
+      <workItem from="1699783186233" duration="45000" />
+      <workItem from="1699907884801" duration="8000" />
+      <workItem from="1699956379392" duration="14000" />
+      <workItem from="1701346028950" duration="5606000" />
     </task>
     <servers />
   </component>

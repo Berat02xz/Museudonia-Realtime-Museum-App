@@ -23,7 +23,7 @@ class Museum {
                 ", website='" + website + '\'' +
                 '}';
     }
-
+    private int id;
     private String name;
     private double latitude;
     private double longitude;
@@ -63,6 +63,8 @@ class Museum {
         this.fee = fee;
         this.charge = charge;
         this.website = website;
+        //make id random
+        this.id = (int) (Math.random() * 1000000);
     }
 
 }

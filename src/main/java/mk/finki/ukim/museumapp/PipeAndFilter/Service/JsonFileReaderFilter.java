@@ -17,7 +17,7 @@ public class JsonFileReaderFilter implements Filter {
     @Override
     public void process(Object data) {
         try {
-            File jsonFile = new File("src/main/java/mk/finki/ukim/museumapp/data/export.json");
+            File jsonFile = new File("src/main/java/mk/finki/ukim/museumapp/data/export2.json");
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode rootNode = objectMapper.readTree(jsonFile);
 
