@@ -26,6 +26,50 @@ public class MuseumExtractorFilter implements Filter {
         return filteredMuseums;
     }
 
+    public static List<Museum> getOpenNow() {
+        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> filteredMuseums = new ArrayList<>();
+        for (Museum museum : museums) {
+            if (museum.getOpeningHours()!="Unknown"){
+                filteredMuseums.add(museum);
+            }
+        }
+        return filteredMuseums;
+    }
+
+    public static List<Museum> getFreeEntry() {
+        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> filteredMuseums = new ArrayList<>();
+        for (Museum museum : museums) {
+            if (museum.getFee().equals("no")){
+                filteredMuseums.add(museum);
+            }
+        }
+        return filteredMuseums;
+    }
+
+    public static List<Museum> getInternetAccess() {
+        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> filteredMuseums = new ArrayList<>();
+        for (Museum museum : museums) {
+            if (museum.getInternetAccess().equals("yes")){
+                filteredMuseums.add(museum);
+            }
+        }
+        return filteredMuseums;
+    }
+
+    public static List<Museum> getSkopje() {
+        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> filteredMuseums = new ArrayList<>();
+        for (Museum museum : museums) {
+            if (museum.getStreet().contains("Skopje")){
+                filteredMuseums.add(museum);
+            }
+        }
+        return filteredMuseums;
+    }
+
     @Override
     public void process(Object data) {
         JsonNode jsonData = (JsonNode) data;

@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+
+
 @Controller
 @RequestMapping("/")
 public class MuseumsTable {
@@ -39,6 +41,40 @@ public class MuseumsTable {
             return "index";
         }
 
+        @GetMapping("/OpenNow")
+        String getOpenNow(Model model) {
+               List<Museum> filteredMuseums = MuseumExtractorFilter.getOpenNow();
+               model.addAttribute("museums", filteredMuseums);
+               return "index";
+        }
+
+        @GetMapping("/freeentry")
+        String getFreeEntry(Model model) {
+               List<Museum> filteredMuseums = MuseumExtractorFilter.getFreeEntry();
+               model.addAttribute("museums", filteredMuseums);
+               return "index";
+        }
+
+        @GetMapping("/InternetAccess")
+        String getInternetAccess(Model model) {
+               List<Museum> filteredMuseums = MuseumExtractorFilter.getInternetAccess();
+               model.addAttribute("museums", filteredMuseums);
+               return "index";
+        }
+
+        @GetMapping("/All")
+        String getAll(Model model) {
+               List<Museum> museums = MuseumExtractorFilter.getMuseums();
+               model.addAttribute("museums", museums);
+               return "index";
+        }
+
+        @GetMapping("/Skopje")
+        String getSkopje(Model model) {
+               List<Museum> filteredMuseums = MuseumExtractorFilter.getSkopje();
+               model.addAttribute("museums", filteredMuseums);
+               return "index";
+        }
 
 
 }
