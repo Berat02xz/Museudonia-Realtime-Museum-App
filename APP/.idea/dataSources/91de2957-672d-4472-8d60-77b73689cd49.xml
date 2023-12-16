@@ -16708,8 +16708,8 @@
     </schema>
     <schema id="5548" parent="5510" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-12-16.15:50:27.937</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2023-12-16.14:50:26</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2023-12-16.18:08:19.040</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2023-12-16.17:08:17</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="5549" parent="5510" name="guest">
@@ -16723,63 +16723,68 @@
       <ModifiedTimestamp>2023-12-16.15:43:40.673</ModifiedTimestamp>
       <ObjectId>1541580530</ObjectId>
     </table>
-    <column id="5552" parent="5551" name="id">
+    <table id="5552" parent="5548" name="reviews">
+      <CreatedTimestamp>2023-12-16.18:07:34.467</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.18:07:34.467</ModifiedTimestamp>
+      <ObjectId>1573580644</ObjectId>
+    </table>
+    <column id="5553" parent="5551" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="5553" parent="5551" name="charge">
+    <column id="5554" parent="5551" name="charge">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="5554" parent="5551" name="email">
+    <column id="5555" parent="5551" name="email">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="5555" parent="5551" name="fee">
+    <column id="5556" parent="5551" name="fee">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5556" parent="5551" name="internet_access">
+    <column id="5557" parent="5551" name="internet_access">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="5557" parent="5551" name="latitude">
+    <column id="5558" parent="5551" name="latitude">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5558" parent="5551" name="longitude">
+    <column id="5559" parent="5551" name="longitude">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="5559" parent="5551" name="name">
+    <column id="5560" parent="5551" name="name">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="5560" parent="5551" name="opening_hours">
+    <column id="5561" parent="5551" name="opening_hours">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="5561" parent="5551" name="phone">
+    <column id="5562" parent="5551" name="phone">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="5562" parent="5551" name="street">
+    <column id="5563" parent="5551" name="street">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="5563" parent="5551" name="website">
+    <column id="5564" parent="5551" name="website">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="5564" parent="5551" name="wikidata">
+    <column id="5565" parent="5551" name="wikidata">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>13</Position>
     </column>
-    <index id="5565" parent="5551" name="PK__museums__3213E83F67012815">
+    <index id="5566" parent="5551" name="PK__museums__3213E83F67012815">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -16787,7 +16792,7 @@
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5566" parent="5551" name="PK__museums__3213E83F67012815">
+    <key id="5567" parent="5551" name="PK__museums__3213E83F67012815">
       <CreatedTimestamp>2023-12-16.15:43:40.677</CreatedTimestamp>
       <ModifiedTimestamp>2023-12-16.15:43:40.677</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -16795,8 +16800,52 @@
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__museums__3213E83F67012815</UnderlyingIndexName>
     </key>
-    <partition id="5567" parent="5565">
+    <column id="5568" parent="5552" name="id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="5569" parent="5552" name="museum_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="5570" parent="5552" name="review">
+      <DasType>varchar(255 char)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="5571" parent="5552" name="stars">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="5572" parent="5552" name="username">
+      <DasType>varchar(255 char)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <index id="5573" parent="5552" name="PK__reviews__3213E83F756BE595">
+      <Clustering>1</Clustering>
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5574" parent="5552" name="PK__reviews__3213E83F756BE595">
+      <CreatedTimestamp>2023-12-16.18:07:34.487</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.18:07:34.487</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1589580701</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__reviews__3213E83F756BE595</UnderlyingIndexName>
+    </key>
+    <partition id="5575" parent="5566">
       <ObjectId>72057594046316544</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="5576" parent="5573">
+      <ObjectId>72057594046382080</ObjectId>
       <Position>1</Position>
     </partition>
   </database-model>
