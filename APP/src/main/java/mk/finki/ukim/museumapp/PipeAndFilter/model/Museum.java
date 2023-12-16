@@ -1,11 +1,18 @@
 package mk.finki.ukim.museumapp.PipeAndFilter.model;
 
+import jakarta.persistence.*;
 import lombok.Data;
 
 //MUSEUM CLASS
 @Data
+@Entity
+@Table(name = "Museums")
 public
 class Museum {
+    public Museum() {
+
+    }
+
     @Override
     public String toString() {
         return "Museum{" +
@@ -23,6 +30,9 @@ class Museum {
                 ", website='" + website + '\'' +
                 '}';
     }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private double latitude;
@@ -64,7 +74,13 @@ class Museum {
         this.charge = charge;
         this.website = website;
         //make id random
-        this.id = (int) (Math.random() * 1000000);
     }
 
+    public void setId(Long id) {
+        this.id = Math.toIntExact(id);
+    }
+
+    public Long getId() {
+        return (long) id;
+    }
 }
