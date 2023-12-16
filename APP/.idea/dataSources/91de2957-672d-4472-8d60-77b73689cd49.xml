@@ -16708,8 +16708,8 @@
     </schema>
     <schema id="5548" parent="5510" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-12-16.18:08:19.040</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2023-12-16.17:08:17</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2023-12-16.20:15:02.160</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2023-12-16.19:15:00</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="5549" parent="5510" name="guest">
@@ -16719,72 +16719,79 @@
       <ObjectId>4</ObjectId>
     </schema>
     <table id="5551" parent="5548" name="museums">
-      <CreatedTimestamp>2023-12-16.15:43:40.673</CreatedTimestamp>
-      <ModifiedTimestamp>2023-12-16.15:43:40.673</ModifiedTimestamp>
-      <ObjectId>1541580530</ObjectId>
+      <CreatedTimestamp>2023-12-16.20:14:38.980</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.20:14:38.980</ModifiedTimestamp>
+      <ObjectId>1797581442</ObjectId>
     </table>
     <table id="5552" parent="5548" name="reviews">
-      <CreatedTimestamp>2023-12-16.18:07:34.467</CreatedTimestamp>
-      <ModifiedTimestamp>2023-12-16.18:07:34.467</ModifiedTimestamp>
-      <ObjectId>1573580644</ObjectId>
+      <CreatedTimestamp>2023-12-16.20:14:39.053</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.20:14:39.053</ModifiedTimestamp>
+      <ObjectId>1829581556</ObjectId>
     </table>
-    <column id="5553" parent="5551" name="id">
+    <table id="5553" parent="5548" name="users">
+      <CreatedTimestamp>2023-12-16.18:09:44.570</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.18:09:44.570</ModifiedTimestamp>
+      <ObjectId>1605580758</ObjectId>
+    </table>
+    <column id="5554" parent="5551" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(55)</SequenceIdentity>
     </column>
-    <column id="5554" parent="5551" name="charge">
+    <column id="5555" parent="5551" name="charge">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="5555" parent="5551" name="email">
+    <column id="5556" parent="5551" name="email">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="5556" parent="5551" name="fee">
+    <column id="5557" parent="5551" name="fee">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5557" parent="5551" name="internet_access">
+    <column id="5558" parent="5551" name="internet_access">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="5558" parent="5551" name="latitude">
+    <column id="5559" parent="5551" name="latitude">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5559" parent="5551" name="longitude">
+    <column id="5560" parent="5551" name="longitude">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="5560" parent="5551" name="name">
+    <column id="5561" parent="5551" name="name">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>8</Position>
+      <CollationName>Macedonian_FYROM_90_CI_AS</CollationName>
     </column>
-    <column id="5561" parent="5551" name="opening_hours">
+    <column id="5562" parent="5551" name="opening_hours">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="5562" parent="5551" name="phone">
+    <column id="5563" parent="5551" name="phone">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="5563" parent="5551" name="street">
+    <column id="5564" parent="5551" name="street">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>11</Position>
+      <CollationName>Macedonian_FYROM_90_CI_AS</CollationName>
     </column>
-    <column id="5564" parent="5551" name="website">
+    <column id="5565" parent="5551" name="website">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="5565" parent="5551" name="wikidata">
+    <column id="5566" parent="5551" name="wikidata">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>13</Position>
     </column>
-    <index id="5566" parent="5551" name="PK__museums__3213E83F67012815">
+    <index id="5567" parent="5551" name="PK__museums__3213E83FE1D7EF9C">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -16792,39 +16799,40 @@
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5567" parent="5551" name="PK__museums__3213E83F67012815">
-      <CreatedTimestamp>2023-12-16.15:43:40.677</CreatedTimestamp>
-      <ModifiedTimestamp>2023-12-16.15:43:40.677</ModifiedTimestamp>
+    <key id="5568" parent="5551" name="PK__museums__3213E83FE1D7EF9C">
+      <CreatedTimestamp>2023-12-16.20:14:38.983</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.20:14:38.983</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1557580587</ObjectId>
+      <ObjectId>1813581499</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__museums__3213E83F67012815</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__museums__3213E83FE1D7EF9C</UnderlyingIndexName>
     </key>
-    <column id="5568" parent="5552" name="id">
+    <column id="5569" parent="5552" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="5569" parent="5552" name="museum_id">
+    <column id="5570" parent="5552" name="museum_id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5570" parent="5552" name="review">
+    <column id="5571" parent="5552" name="review">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>3</Position>
+      <CollationName>Macedonian_FYROM_90_CI_AS</CollationName>
     </column>
-    <column id="5571" parent="5552" name="stars">
+    <column id="5572" parent="5552" name="stars">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5572" parent="5552" name="username">
+    <column id="5573" parent="5552" name="username">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>5</Position>
     </column>
-    <index id="5573" parent="5552" name="PK__reviews__3213E83F756BE595">
+    <index id="5574" parent="5552" name="PK__reviews__3213E83F9F29F901">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -16832,20 +16840,62 @@
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5574" parent="5552" name="PK__reviews__3213E83F756BE595">
-      <CreatedTimestamp>2023-12-16.18:07:34.487</CreatedTimestamp>
-      <ModifiedTimestamp>2023-12-16.18:07:34.487</ModifiedTimestamp>
+    <key id="5575" parent="5552" name="PK__reviews__3213E83F9F29F901">
+      <CreatedTimestamp>2023-12-16.20:14:39.057</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.20:14:39.057</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1589580701</ObjectId>
+      <ObjectId>1845581613</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__reviews__3213E83F756BE595</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__reviews__3213E83F9F29F901</UnderlyingIndexName>
     </key>
-    <partition id="5575" parent="5566">
-      <ObjectId>72057594046316544</ObjectId>
+    <column id="5576" parent="5553" name="id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="5577" parent="5553" name="email">
+      <DasType>varchar(255 char)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="5578" parent="5553" name="password">
+      <DasType>varchar(255 char)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="5579" parent="5553" name="role">
+      <DasType>varchar(255 char)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="5580" parent="5553" name="username">
+      <DasType>varchar(255 char)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <index id="5581" parent="5553" name="PK__users__3213E83F8E6B32FA">
+      <Clustering>1</Clustering>
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5582" parent="5553" name="PK__users__3213E83F8E6B32FA">
+      <CreatedTimestamp>2023-12-16.18:09:44.573</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-16.18:09:44.573</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>1621580815</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__users__3213E83F8E6B32FA</UnderlyingIndexName>
+    </key>
+    <partition id="5583" parent="5567">
+      <ObjectId>72057594046906368</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="5576" parent="5573">
-      <ObjectId>72057594046382080</ObjectId>
+    <partition id="5584" parent="5574">
+      <ObjectId>72057594046971904</ObjectId>
+      <Position>1</Position>
+    </partition>
+    <partition id="5585" parent="5581">
+      <ObjectId>72057594046447616</ObjectId>
       <Position>1</Position>
     </partition>
   </database-model>

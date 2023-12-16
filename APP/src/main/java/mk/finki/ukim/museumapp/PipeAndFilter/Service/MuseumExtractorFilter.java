@@ -1,22 +1,28 @@
 package mk.finki.ukim.museumapp.PipeAndFilter.Service;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import lombok.Getter;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.Museum;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
 
 //-----MUSEUM DATA EXTRACTOR FROM JSON FILE
-public class MuseumExtractorFilter implements Filter {
-    private Filter nextFilter;
-    private static List<Museum> museums = new ArrayList<>();
-
+public class MuseumExtractorFilter implements Filter{
+    private final Filter nextFilter;
+    @Autowired
     public MuseumExtractorFilter(Filter nextFilter) {
         this.nextFilter = nextFilter;
     }
 
+    @Getter
+    private static List<Museum> museums = new ArrayList<>();
+
+
+
     public static List<Museum> searchmuseums(String input) {
-        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
         for (Museum museum : museums) {
             if (museum.getName().toLowerCase().contains(input.toLowerCase())) {
@@ -27,7 +33,7 @@ public class MuseumExtractorFilter implements Filter {
     }
 
     public static List<Museum> getOpenNow() {
-        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
         for (Museum museum : museums) {
             if (museum.getOpeningHours()!="Unknown"){
@@ -38,7 +44,7 @@ public class MuseumExtractorFilter implements Filter {
     }
 
     public static List<Museum> getFreeEntry() {
-        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
         for (Museum museum : museums) {
             if (museum.getFee().equals("no")){
@@ -49,7 +55,7 @@ public class MuseumExtractorFilter implements Filter {
     }
 
     public static List<Museum> getInternetAccess() {
-        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
         for (Museum museum : museums) {
             if (museum.getInternetAccess().equals("yes")){
@@ -60,7 +66,7 @@ public class MuseumExtractorFilter implements Filter {
     }
 
     public static List<Museum> getSkopje() {
-        List<Museum> museums = MuseumExtractorFilter.getMuseums();
+        List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
         for (Museum museum : museums) {
             if (museum.getStreet().contains("Skopje")){
@@ -90,10 +96,6 @@ public class MuseumExtractorFilter implements Filter {
         }
     }
 
-    public static List<Museum> getMuseums() {
-        return museums;
-    }
-
     private Museum createMuseum(JsonNode node) {
         JsonNode tags = node.get("tags");
 
@@ -112,4 +114,5 @@ public class MuseumExtractorFilter implements Filter {
                 tags.has("website") ? tags.get("website").asText() : "Unknown"
         );
     }
+
 }
