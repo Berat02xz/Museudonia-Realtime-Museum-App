@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/MuseumApp.j0boiA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/MuseumApp.j0boiA/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/MuseumApp.j0boiA/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/MuseumApp.j0boiA/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/master.YiqNvw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/master.YiqNvw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/master.YiqNvw/schema/dbo.sYMBAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a1eb9d0-099c-41d7-97e1-069b661bb6d5/storage_v2/_src_/database/master.YiqNvw/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MuseumApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MuseumApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "MuseumApp.wasFacetEverAdded": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -54,7 +71,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "DatabaseTesting",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/berat/Documents/GitHub/MuseumApp/MuseumApp/APP/pom.xml",
+    "last_opened_file_path": "C:/Users/berat/Documents/GitHub/MuseumApp/MuseumApp/APP/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,6 +90,14 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\berat\Documents\GitHub\MuseumApp\MuseumApp\APP\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.MuseumAppApplication">
     <configuration name="PipeAndFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mk.finki.ukim.museumapp.PipeAndFilter.PipeAndFilter" />
@@ -131,7 +156,11 @@
       <workItem from="1701464752945" duration="58000" />
       <workItem from="1701551592117" duration="51000" />
       <workItem from="1702491365844" duration="788000" />
-      <workItem from="1702492244404" duration="2444000" />
+      <workItem from="1702492244404" duration="2755000" />
+      <workItem from="1702732424327" duration="3927000" />
+      <workItem from="1702736382278" duration="376000" />
+      <workItem from="1702736784116" duration="139000" />
+      <workItem from="1702737271977" duration="942000" />
     </task>
     <servers />
   </component>
