@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/91de2957-672d-4472-8d60-77b73689cd49.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/91de2957-672d-4472-8d60-77b73689cd49.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -176,6 +175,7 @@
       <workItem from="1702737271977" duration="1492000" />
       <workItem from="1702746222283" duration="9829000" />
       <workItem from="1702758088874" duration="163000" />
+      <workItem from="1702770023560" duration="999000" />
     </task>
     <servers />
   </component>
