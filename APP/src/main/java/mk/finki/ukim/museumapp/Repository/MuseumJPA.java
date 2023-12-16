@@ -10,4 +10,14 @@ import java.util.List;
 public interface MuseumJPA extends JpaRepository<Museum, Integer> {
 
     List<Museum> findAllBy();
+
+    List<Museum> findMuseumsByNameContainingIgnoreCase(String search);
+
+    List<Museum> findMuseumsByOpeningHoursIsNot(String Unknown);
+
+    List<Museum> findMuseumsByFeeNotContaining(String No);
+
+    List<Museum> findMuseumsByInternetAccessContaining(String Yes);
+
+    List<Museum> findMuseumsByStreetContains(String Street);
 }

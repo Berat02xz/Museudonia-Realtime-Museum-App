@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/91de2957-672d-4472-8d60-77b73689cd49.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/91de2957-672d-4472-8d60-77b73689cd49.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/MuseumAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/MuseumAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/PipeAndFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/PipeAndFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/MuseumExtractorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/MuseumExtractorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/MuseumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/MuseumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/Implementation/MuseumImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/Implementation/MuseumImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/MuseumJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/MuseumJPA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +177,7 @@
       <workItem from="1702736382278" duration="376000" />
       <workItem from="1702736784116" duration="139000" />
       <workItem from="1702737271977" duration="1492000" />
-      <workItem from="1702746222283" duration="7349000" />
+      <workItem from="1702746222283" duration="9824000" />
     </task>
     <servers />
   </component>

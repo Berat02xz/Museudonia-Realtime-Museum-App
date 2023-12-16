@@ -1,7 +1,6 @@
 package mk.finki.ukim.museumapp.controllers;
 
 
-import mk.finki.ukim.museumapp.PipeAndFilter.Service.MuseumExtractorFilter;
 import mk.finki.ukim.museumapp.PipeAndFilter.Service.MuseumService;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.Museum;
 import org.springframework.stereotype.Controller;
@@ -42,42 +41,42 @@ public class MuseumsTable {
 
         @GetMapping("/search")
         String getSearch(Model model, @RequestParam String search) {
-            List<Museum> filteredMuseums = MuseumExtractorFilter.searchmuseums(search);
+            List<Museum> filteredMuseums = museumService.searchmuseums(search);
             model.addAttribute("museums", filteredMuseums);
             return "index";
         }
 
         @GetMapping("/OpenNow")
         String getOpenNow(Model model) {
-               List<Museum> filteredMuseums = MuseumExtractorFilter.getOpenNow();
+               List<Museum> filteredMuseums = museumService.getOpenNow();
                model.addAttribute("museums", filteredMuseums);
                return "index";
         }
 
         @GetMapping("/freeentry")
         String getFreeEntry(Model model) {
-               List<Museum> filteredMuseums = MuseumExtractorFilter.getFreeEntry();
+               List<Museum> filteredMuseums = museumService.getFreeEntry();
                model.addAttribute("museums", filteredMuseums);
                return "index";
         }
 
         @GetMapping("/InternetAccess")
         String getInternetAccess(Model model) {
-               List<Museum> filteredMuseums = MuseumExtractorFilter.getInternetAccess();
+               List<Museum> filteredMuseums = museumService.getInternetAccess();
                model.addAttribute("museums", filteredMuseums);
                return "index";
         }
 
         @GetMapping("/All")
         String getAll(Model model) {
-               List<Museum> museums = MuseumExtractorFilter.getMuseums();
+               List<Museum> museums = museumService.getMuseums();
                model.addAttribute("museums", museums);
                return "index";
         }
 
         @GetMapping("/Skopje")
         String getSkopje(Model model) {
-               List<Museum> filteredMuseums = MuseumExtractorFilter.getSkopje();
+               List<Museum> filteredMuseums = museumService.getSkopje();
                model.addAttribute("museums", filteredMuseums);
                return "index";
         }

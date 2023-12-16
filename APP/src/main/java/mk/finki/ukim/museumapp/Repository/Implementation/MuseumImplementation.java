@@ -22,4 +22,29 @@ public class MuseumImplementation implements MuseumService {
     public List<Museum> getMuseums() {
         return museumJPA.findAllBy();
     }
+
+    @Override
+    public List<Museum> searchmuseums(String search) {
+        return museumJPA.findMuseumsByNameContainingIgnoreCase(search);
+    }
+
+    @Override
+    public List<Museum> getOpenNow() {
+        return museumJPA.findMuseumsByOpeningHoursIsNot("Unknown");
+    }
+
+    @Override
+    public List<Museum> getFreeEntry() {
+        return museumJPA.findMuseumsByFeeNotContaining("Unknown");
+    }
+
+    @Override
+    public List<Museum> getInternetAccess() {
+        return museumJPA.findMuseumsByInternetAccessContaining("yes");
+    }
+
+    @Override
+    public List<Museum> getSkopje() {
+        return museumJPA.findMuseumsByStreetContains("Skopje");
+    }
 }

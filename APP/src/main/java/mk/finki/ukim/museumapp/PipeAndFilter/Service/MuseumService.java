@@ -9,4 +9,13 @@ import java.util.List;
 public interface MuseumService {
     List<Museum> getMuseums();
 
+    List<Museum> searchmuseums(String search);
+
+    List<Museum> getOpenNow();
+
+    List<Museum> getFreeEntry();
+
+    List<Museum> getInternetAccess();
+
+    List<Museum> getSkopje();
 }
