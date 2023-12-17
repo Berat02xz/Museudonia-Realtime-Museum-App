@@ -25,8 +25,9 @@
 **Дизајн на апликацијата:** [Слики](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
 
 **Tech Stack:** 
-- Thymeleaf
-- Javascript (error handling)
+- Thymeleaf (HTML Template Engine)
+- Javascript (Error Handling)
 - Java
 - Spring Boot 3.1.0
+- Spring Data JPA
 - Azure SQL (Hosted on Azure)
