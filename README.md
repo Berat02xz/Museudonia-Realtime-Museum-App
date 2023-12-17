@@ -12,7 +12,6 @@
 - Viktor Sibinovikj (195120)
 - Berat Ahmetaj (216130)
 
-
 **Ментори:** 
 - проф. д-р Љупчо Антовски
 - проф. д-р Петре Ламески
@@ -24,3 +23,10 @@
 **Архитектури:** [Документ](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
 
 **Дизајн на апликацијата:** [Слики](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
+
+**Tech Stack:** 
+-Thymeleaf
+-Javascript (error handling)
+-Java
+-Spring Boot 3.1.0
+-Azure SQL (Hosted on Azure)
