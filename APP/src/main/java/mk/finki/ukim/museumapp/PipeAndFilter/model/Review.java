@@ -14,6 +14,7 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private int MuseumId;
+    @Column(name = "review",columnDefinition="VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
     private String review;
     private String username;
     private int stars;
