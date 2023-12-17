@@ -16852,7 +16852,7 @@
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(2)</SequenceIdentity>
     </column>
     <column id="5577" parent="5553" name="email">
       <DasType>varchar(255 char)|0s</DasType>
