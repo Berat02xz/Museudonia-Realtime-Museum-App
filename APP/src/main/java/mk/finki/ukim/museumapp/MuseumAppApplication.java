@@ -1,6 +1,5 @@
 package mk.finki.ukim.museumapp;
 
-import mk.finki.ukim.museumapp.PipeAndFilter.PipeAndFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +8,8 @@ public class MuseumAppApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MuseumAppApplication.class, args);
-        PipeAndFilter.main(null);
+
+        //ONLY UNCCOMENT IF YOU WANNA ADD TO DB
+        //PipeAndFilter.main(null);
     }
 }
