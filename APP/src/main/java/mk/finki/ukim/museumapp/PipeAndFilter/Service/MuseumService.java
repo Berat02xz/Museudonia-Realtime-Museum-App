@@ -19,4 +19,9 @@ public interface MuseumService {
 
     List<Museum> getSkopje();
 
+    Museum createMuseum(String name, double latitude, double longitude, String street, String email, String internetAccess, String wikidata, String openingHours, String phone, String fee, String charge, String website);
+
+    void deleteMuseum(int id);
+
+    Museum getMuseum(int id);
 }
