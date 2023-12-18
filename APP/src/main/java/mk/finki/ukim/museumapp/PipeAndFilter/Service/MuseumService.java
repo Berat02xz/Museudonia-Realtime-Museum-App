@@ -18,5 +18,4 @@ public interface MuseumService {
     List<Museum> getInternetAccess();
 
     List<Museum> getSkopje();
-
 }
