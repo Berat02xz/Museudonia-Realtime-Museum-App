@@ -47,4 +47,19 @@ public class MuseumImplementation implements MuseumService {
     public List<Museum> getSkopje() {
         return museumJPA.findMuseumsByStreetContains("Skopje");
     }
+
+    @Override
+    public Museum createMuseum(String name, double latitude, double longitude, String street, String email, String internetAccess, String wikidata, String openingHours, String phone, String fee, String charge, String website) {
+        return museumJPA.save(new Museum(name,latitude,longitude,street,email,internetAccess,wikidata,openingHours,phone,fee,charge,website));
+    }
+
+    @Override
+    public void deleteMuseum(int id) {
+        museumJPA.deleteById(id);
+    }
+
+    @Override
+    public Museum getMuseum(int id) {
+        return museumJPA.findMuseumById(id);
+    }
 }

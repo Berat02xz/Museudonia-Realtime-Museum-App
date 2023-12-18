@@ -7,10 +7,7 @@ import mk.finki.ukim.museumapp.PipeAndFilter.model.Museum;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -132,6 +129,44 @@ public class MuseumsTable {
             model.addAttribute("user", user);
             return "redirect:/";
 
+        }
+
+        @GetMapping("/museums/create")
+        public String createMuseum(Model model) {
+        System.out.println("EDIT MUSEUM");
+            return "MuseumEdit";
+        }
+
+        @PostMapping("/museum/add")
+        public String createMuseum(Model model, @RequestParam int id, @RequestParam String name, @RequestParam String latitude, @RequestParam String longitude, @RequestParam String street, @RequestParam String email, @RequestParam String internetAccess, @RequestParam String wikidata, @RequestParam String openingHours, @RequestParam String phone, @RequestParam String fee, @RequestParam String charge, @RequestParam String website) {
+
+            if(id != 0) {
+                museumService.deleteMuseum(id);
+                System.out.println("MUSEUM DELETED BEFORE ADDING NEW");
+            }
+
+            //cast string latitude to double
+            double lat = Double.parseDouble(latitude);
+            //cast string longitude to double
+            double lon = Double.parseDouble(longitude);
+
+            Museum museum = museumService.createMuseum(name, lat, lon, street, email, internetAccess, wikidata, openingHours, phone, fee, charge, website);
+            System.out.println("MUSEUM CREATED");
+            return "redirect:/edit.html";
+        }
+
+        @GetMapping("/museums/delete/{id}")
+        public String deleteMuseum(Model model, @PathVariable int id) {
+            museumService.deleteMuseum(id);
+            System.out.println("MUSEUM DELETED");
+            return "redirect:/edit.html";
+        }
+
+        @GetMapping("/museums/edit/{id}")
+        public String editMuseum(Model model, @PathVariable int id) {
+            Museum museum = museumService.getMuseum(id);
+            model.addAttribute("museum", museum);
+            return "MuseumEdit";
         }
 
 }

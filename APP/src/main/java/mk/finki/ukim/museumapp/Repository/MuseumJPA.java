@@ -20,4 +20,8 @@ public interface MuseumJPA extends JpaRepository<Museum, Integer> {
     List<Museum> findMuseumsByInternetAccessContaining(String Yes);
 
     List<Museum> findMuseumsByStreetContains(String Street);
+
+    void deleteById(int id);
+
+    Museum findMuseumById(int id);
 }
