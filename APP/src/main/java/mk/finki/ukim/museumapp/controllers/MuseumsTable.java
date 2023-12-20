@@ -43,6 +43,12 @@ public class MuseumsTable {
 
         @GetMapping("/search")
         String getSearch(Model model, @RequestParam String search) {
+            //if search is empty return all museums
+            if(search.isEmpty()) {
+                List<Museum> museums = museumService.getMuseums();
+                model.addAttribute("museums", museums);
+                return "index";
+            }
             List<Museum> filteredMuseums = museumService.searchmuseums(search);
             model.addAttribute("museums", filteredMuseums);
             return "index";
