@@ -27,4 +27,9 @@ public class ReviewImplementation implements ReviewService {
     public List<Review> GetAllReviews() {
         return reviewJPA.findAllBy();
     }
+
+    @Override
+    public void deleteReview(int id) {
+        reviewJPA.deleteById((long) id);
+    }
 }

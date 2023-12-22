@@ -50,7 +50,7 @@ class Museum {
     private String fee;
     private String charge;
     private String website;
-    @OneToMany(mappedBy = "museum")
+    @OneToMany(mappedBy = "museum", cascade = CascadeType.ALL)
     private List<Review> reviews;
 
     public Museum(

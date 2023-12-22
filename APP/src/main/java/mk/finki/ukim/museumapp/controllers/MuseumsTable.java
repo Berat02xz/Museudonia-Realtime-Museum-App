@@ -5,6 +5,7 @@ import mk.finki.ukim.museumapp.PipeAndFilter.Service.MuseumService;
 import mk.finki.ukim.museumapp.PipeAndFilter.Service.ReviewService;
 import mk.finki.ukim.museumapp.PipeAndFilter.Service.UserService;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.Museum;
+import mk.finki.ukim.museumapp.PipeAndFilter.model.Review;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -147,6 +148,13 @@ public class MuseumsTable {
             return "MuseumEdit";
         }
 
+        @GetMapping("/museums/editreviews")
+        public String editReviews(Model model) {
+            List<Review> reviews = reviewService.GetAllReviews();
+            model.addAttribute("reviews", reviews);
+            return "EditReviews";
+        }
+
         @PostMapping("/museum/add")
         public String createMuseum(Model model, @RequestParam int id, @RequestParam String name, @RequestParam String latitude, @RequestParam String longitude, @RequestParam String street, @RequestParam String email, @RequestParam String internetAccess, @RequestParam String wikidata, @RequestParam String openingHours, @RequestParam String phone, @RequestParam String fee, @RequestParam String charge, @RequestParam String website) {
 
@@ -170,6 +178,13 @@ public class MuseumsTable {
             museumService.deleteMuseum(id);
             System.out.println("MUSEUM DELETED");
             return "redirect:/edit.html";
+        }
+
+        @GetMapping("/reviews/delete/{id}")
+        public String deleteReview(Model model, @PathVariable int id) {
+            reviewService.deleteReview(id);
+            System.out.println("REVIEW DELETED");
+            return "redirect:/museums/editreviews";
         }
 
         @GetMapping("/museums/edit/{id}")

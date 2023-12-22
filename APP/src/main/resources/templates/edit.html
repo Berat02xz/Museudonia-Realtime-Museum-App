@@ -96,6 +96,8 @@
     <div class="row">
         <div class="col-md-12">
             <a th:href="@{/museums/create}" class="btn btn-primary">Create Museum</a>
+            <hr>
+            <a th:href="@{/museums/editreviews}" class="btn btn-primary">Check Reviews</a>
         </div>
     </div>
     <div class="row">
@@ -103,15 +105,15 @@
             <table class="table table-striped">
                 <tr>
                     <th>Name</th>
-                    <th>street</th>
-                    <th>email</th>
-                    <th>internetAccess</th>
-                    <th>openingHours</th>
-                    <th>phone</th>
-                    <th>fee</th>
-                    <th>wikidata</th>
-                    <th>charge</th>
-                    <th>website</th>
+                    <th>Street</th>
+                    <th>Email</th>
+                    <th>Internet</th>
+                    <th>Working Hours</th>
+                    <th>Phone</th>
+                    <th>Fee</th>
+                    <th>Wiki</th>
+                    <th>Charge</th>
+                    <th>Website</th>
                     <th>Actions</th>
                 </tr>
                 <tr th:each="museum : ${museums}">
@@ -127,7 +129,7 @@
                     <td th:text="${museum.website}"></td>
                     <td>
                         <a th:href="@{/museums/edit/{id}(id=${museum.id})}" class="btn btn-primary">Edit</a> </br>
-                        <a th:href="@{/museums/delete/{id}(id=${museum.id})}" class="btn btn-danger">Delete</a>
+                        <a th:href="@{/museums/delete/{id}(id=${museum.id})}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
                     </td>
                 </tr>
             </table>

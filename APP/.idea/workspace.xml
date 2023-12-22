@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="" />
+    <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22-Dec-23_12_39_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22-Dec-23_12_39_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22-Dec-23_12_41_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22-Dec-23_12_41_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22-Dec-23_12_46_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22-Dec-23_12_46_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/Implementation/ReviewImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/Implementation/ReviewImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/ReviewJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/ReviewJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/PipeAndFilter/Service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/PipeAndFilter/Service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/PipeAndFilter/model/Museum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/Repository/Implementation/ReviewImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/Repository/Implementation/ReviewImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/Repository/ReviewJPA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/Repository/ReviewJPA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/controllers/MuseumsTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mk/finki/ukim/museumapp/controllers/MuseumsTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +41,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="Review-System-Working" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +72,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.MuseumAppApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Review-System-Working",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/berat/Documents/GitHub/MuseumApp/MuseumApp/APP/src/main/resources",
     "node.js.detected.package.eslint": "true",
