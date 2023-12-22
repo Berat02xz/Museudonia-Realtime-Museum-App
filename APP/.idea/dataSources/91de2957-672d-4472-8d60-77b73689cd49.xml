@@ -16720,12 +16720,12 @@
     </schema>
     <table id="5551" parent="5548" name="museums">
       <CreatedTimestamp>2023-12-16.20:14:38.980</CreatedTimestamp>
-      <ModifiedTimestamp>2023-12-16.20:14:38.980</ModifiedTimestamp>
+      <ModifiedTimestamp>2023-12-22.12:01:34.150</ModifiedTimestamp>
       <ObjectId>1797581442</ObjectId>
     </table>
     <table id="5552" parent="5548" name="reviews">
       <CreatedTimestamp>2023-12-16.20:14:39.053</CreatedTimestamp>
-      <ModifiedTimestamp>2023-12-16.20:14:39.053</ModifiedTimestamp>
+      <ModifiedTimestamp>2023-12-22.12:01:34.147</ModifiedTimestamp>
       <ObjectId>1829581556</ObjectId>
     </table>
     <table id="5553" parent="5548" name="users">
@@ -16737,7 +16737,11 @@
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+<<<<<<< Updated upstream
       <SequenceIdentity>1(55)</SequenceIdentity>
+=======
+      <SequenceIdentity>1(60)</SequenceIdentity>
+>>>>>>> Stashed changes
     </column>
     <column id="5555" parent="5551" name="charge">
       <DasType>varchar(255 char)|0s</DasType>
@@ -16832,7 +16836,16 @@
       <DasType>varchar(255 char)|0s</DasType>
       <Position>5</Position>
     </column>
-    <index id="5574" parent="5552" name="PK__reviews__3213E83F9F29F901">
+    <foreign-key id="5574" parent="5552" name="FKp991rngx482my5cnq34po40ti">
+      <ColNames>museum_id</ColNames>
+      <CreatedTimestamp>2023-12-22.12:01:34.147</CreatedTimestamp>
+      <ModifiedTimestamp>2023-12-22.12:01:34.147</ModifiedTimestamp>
+      <ObjectId>18099105</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefTableId>1797581442</RefTableId>
+      <RefTableName>museums</RefTableName>
+    </foreign-key>
+    <index id="5575" parent="5552" name="PK__reviews__3213E83F9F29F901">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -16840,7 +16853,7 @@
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5575" parent="5552" name="PK__reviews__3213E83F9F29F901">
+    <key id="5576" parent="5552" name="PK__reviews__3213E83F9F29F901">
       <CreatedTimestamp>2023-12-16.20:14:39.057</CreatedTimestamp>
       <ModifiedTimestamp>2023-12-16.20:14:39.057</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -16848,29 +16861,29 @@
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__reviews__3213E83F9F29F901</UnderlyingIndexName>
     </key>
-    <column id="5576" parent="5553" name="id">
+    <column id="5577" parent="5553" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(2)</SequenceIdentity>
     </column>
-    <column id="5577" parent="5553" name="email">
+    <column id="5578" parent="5553" name="email">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="5578" parent="5553" name="password">
+    <column id="5579" parent="5553" name="password">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="5579" parent="5553" name="role">
+    <column id="5580" parent="5553" name="role">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5580" parent="5553" name="username">
+    <column id="5581" parent="5553" name="username">
       <DasType>varchar(255 char)|0s</DasType>
       <Position>5</Position>
     </column>
-    <index id="5581" parent="5553" name="PK__users__3213E83F8E6B32FA">
+    <index id="5582" parent="5553" name="PK__users__3213E83F8E6B32FA">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -16878,7 +16891,7 @@
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5582" parent="5553" name="PK__users__3213E83F8E6B32FA">
+    <key id="5583" parent="5553" name="PK__users__3213E83F8E6B32FA">
       <CreatedTimestamp>2023-12-16.18:09:44.573</CreatedTimestamp>
       <ModifiedTimestamp>2023-12-16.18:09:44.573</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -16886,15 +16899,15 @@
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__users__3213E83F8E6B32FA</UnderlyingIndexName>
     </key>
-    <partition id="5583" parent="5567">
+    <partition id="5584" parent="5567">
       <ObjectId>72057594046906368</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="5584" parent="5574">
+    <partition id="5585" parent="5575">
       <ObjectId>72057594046971904</ObjectId>
       <Position>1</Position>
     </partition>
-    <partition id="5585" parent="5581">
+    <partition id="5586" parent="5582">
       <ObjectId>72057594046447616</ObjectId>
       <Position>1</Position>
     </partition>
