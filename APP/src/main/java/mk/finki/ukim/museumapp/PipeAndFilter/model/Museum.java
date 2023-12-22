@@ -3,8 +3,6 @@ package mk.finki.ukim.museumapp.PipeAndFilter.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.List;
-
 //MUSEUM CLASS
 @Data
 @Entity
@@ -50,8 +48,6 @@ class Museum {
     private String fee;
     private String charge;
     private String website;
-    @OneToMany(mappedBy = "museum")
-    private List<Review> reviews;
 
     public Museum(
             String name,

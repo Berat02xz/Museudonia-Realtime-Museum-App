@@ -2,7 +2,6 @@ package mk.finki.ukim.museumapp.controllers;
 
 
 import mk.finki.ukim.museumapp.PipeAndFilter.Service.MuseumService;
-import mk.finki.ukim.museumapp.PipeAndFilter.Service.ReviewService;
 import mk.finki.ukim.museumapp.PipeAndFilter.Service.UserService;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.Museum;
 import mk.finki.ukim.museumapp.PipeAndFilter.model.User;
@@ -19,12 +18,10 @@ import java.util.List;
 public class MuseumsTable {
     private final MuseumService museumService;
     private final UserService userService;
-    public final ReviewService reviewService;
 
-    public MuseumsTable(MuseumService museumService, UserService userService, ReviewService reviewService) {
+    public MuseumsTable(MuseumService museumService, UserService userService) {
         this.museumService = museumService;
         this.userService = userService;
-        this.reviewService = reviewService;
     }
 
     @GetMapping("/edit.html")
@@ -41,7 +38,6 @@ public class MuseumsTable {
         public String getIndex(Model model) {
             List<Museum> museums = museumService.getMuseums();
             model.addAttribute("museums", museums);
-
             return "index";
         }
 

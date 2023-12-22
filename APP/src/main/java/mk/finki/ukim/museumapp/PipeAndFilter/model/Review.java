@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 
-
 @Data
 @Entity
 @Table(name = "Reviews")
@@ -14,20 +13,17 @@ public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private int MuseumId;
     @Column(name = "review",columnDefinition="VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
     private String review;
     private String username;
     private int stars;
 
-    @ManyToOne
-    @JoinColumn(name = "museum_id")
-    private Museum museum;
-
     public Review() {
-
     }
 
-    public Review(String review, String username, int stars) {
+    public Review(int MuseumId, String review, String username, int stars) {
+        this.MuseumId = MuseumId;
         this.review = review;
         this.username = username;
         this.stars = stars;
