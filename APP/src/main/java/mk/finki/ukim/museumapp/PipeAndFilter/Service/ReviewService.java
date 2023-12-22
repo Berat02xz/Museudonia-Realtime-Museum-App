@@ -13,4 +13,6 @@ public interface ReviewService {
     List<Review> GetAllReviews();
 
     void deleteReview(int id);
+
+    Review saveReview(String review, String username, int stars, int id);
 }

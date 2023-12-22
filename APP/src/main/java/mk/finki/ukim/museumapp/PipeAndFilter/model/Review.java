@@ -33,4 +33,10 @@ public class Review {
         this.stars = stars;
     }
 
+    public Review(String review, String username, int stars, Museum museum) {
+        this.review = review;
+        this.username = username;
+        this.stars = stars;
+        this.museum = museum;
+    }
 }

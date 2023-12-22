@@ -32,4 +32,9 @@ public class ReviewImplementation implements ReviewService {
     public void deleteReview(int id) {
         reviewJPA.deleteById((long) id);
     }
+
+    @Override
+    public Review saveReview(String review, String username, int stars, int museum_id) {
+        return reviewJPA.save(new Review(review, username, stars, museumJPA.findById(museum_id).get()));
+    }
 }
