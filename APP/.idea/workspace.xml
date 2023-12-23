@@ -7,9 +7,6 @@
     <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/91de2957-672d-4472-8d60-77b73689cd49.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/91de2957-672d-4472-8d60-77b73689cd49.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/Service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/PipeAndFilter/model/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/Implementation/ReviewImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/Implementation/ReviewImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
@@ -193,7 +190,8 @@
       <workItem from="1702770023560" duration="999000" />
       <workItem from="1702808571306" duration="7346000" />
       <workItem from="1703080721093" duration="3017000" />
-      <workItem from="1703277787273" duration="1892000" />
+      <workItem from="1703277787273" duration="2226000" />
+      <workItem from="1703344523490" duration="4000000" />
     </task>
     <servers />
   </component>

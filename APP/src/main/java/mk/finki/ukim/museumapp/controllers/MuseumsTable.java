@@ -204,6 +204,7 @@ public class MuseumsTable {
         @PostMapping("/museum/createReview")
         public String addReview(Model model, @RequestParam int museum_id, @RequestParam String review, @RequestParam String username, @RequestParam int stars) {
             Review review1 = reviewService.saveReview(review, username, stars, museum_id);
+
             System.out.println("REVIEW CREATED");
             return "redirect:/";
         }
