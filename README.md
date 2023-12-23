@@ -24,3 +24,5 @@
 
 **Дизајн на апликацијата:** [Слики](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
 
+**Видео за имплементација на функционалностите:** [Видео](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%203)
+
