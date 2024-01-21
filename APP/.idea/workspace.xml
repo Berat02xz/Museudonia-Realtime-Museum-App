@@ -8,11 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/MuseumAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/MuseumAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MuseumApp-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MuseumApp-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MuseumApp-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/MuseumApp-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Azure Spring Apps.Deploy Spring app: APP.executor": "Run",
     "Azure Web App.Azure Web App: APP:Museodonia.executor": "Run",
+    "Azure Web App.Azure Web App: APP:MuseumApp.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "Maven.MuseumApp [package].executor": "Run",
     "MuseumApp.wasFacetEverAdded": "true",
@@ -96,7 +96,7 @@
       <recent name="C:\Users\berat\Documents\GitHub\MuseumApp\MuseumApp\APP\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MuseumAppApplication">
+  <component name="RunManager" selected="Azure Web App.Azure Web App: APP:MuseumApp">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -125,6 +125,13 @@
       <option name="subscription" />
       <method v="2">
         <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Deploy Spring app: APP" type="AZURE_SPRING_CLOUD_SUPPORT" factoryName="Deploy Spring Cloud Services">
+      <App id="/subscriptions/f2b26f10-e080-45b0-8db3-fd8e249f7740/resourceGroups/FINKISTUDENT/providers/Microsoft.AppPlatform/Spring/museudoniaspring/apps/spring-app-20240121175847" />
+      <Artifact identifier="mk.finki.ukim:MuseumApp:0.0.1-SNAPSHOT" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
       </method>
     </configuration>
     <configuration name="PipeAndFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -191,6 +198,50 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
       </method>
     </configuration>
+    <configuration name="Azure Web App: APP:MuseumApp" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
+      <option name="appServicePlanName" value="" />
+      <option name="appServicePlanResourceGroupName" value="" />
+      <option name="appSettingsKey" value="860cf84b-6613-4c27-92b5-67ee52149013" />
+      <option name="appSettingsToRemove">
+        <set />
+      </option>
+      <option name="applicationLogLevel" value="Error" />
+      <option name="artifactIdentifier" value="mk.finki.ukim:MuseumApp:0.0.1-SNAPSHOT" />
+      <option name="azureArtifactType" value="Maven" />
+      <option name="creatingAppServicePlan" value="true" />
+      <option name="creatingNew" value="false" />
+      <option name="creatingResGrp" value="false" />
+      <option name="deployToRoot" value="true" />
+      <option name="deployToSlot" value="false" />
+      <option name="enableApplicationLog" value="false" />
+      <option name="enableDetailedErrorMessage" value="false" />
+      <option name="enableFailedRequestTracing" value="false" />
+      <option name="enableWebServerLogging" value="true" />
+      <option name="newSlotConfigurationSource" />
+      <option name="newSlotName" />
+      <option name="openBrowserAfterDeployment" value="false" />
+      <option name="operatingSystem" value="linux" />
+      <option name="packaging" value="jar" />
+      <option name="pricing" value="B2" />
+      <option name="projectBase" value="" />
+      <option name="projectType" value="" />
+      <option name="region" value="southcentralus" />
+      <option name="resourceGroup" value="" />
+      <option name="slotName" />
+      <option name="slotPanelVisible" value="false" />
+      <option name="subscriptionId" value="f2b26f10-e080-45b0-8db3-fd8e249f7740" />
+      <option name="targetName" value="" />
+      <option name="targetPath" value="" />
+      <option name="webAppContainer" value="Java SE" />
+      <option name="webAppId" value="/subscriptions/f2b26f10-e080-45b0-8db3-fd8e249f7740/resourceGroups/rg-app-APP-240121182223/providers/Microsoft.Web/sites/Museudonia" />
+      <option name="webAppJavaVersion" value="17" />
+      <option name="webAppName" value="" />
+      <option name="webServerLogQuota" value="35" />
+      <option name="webServerRetentionPeriod" value="0" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
     <configuration default="true" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
       <option name="appServicePlanName" value="" />
       <option name="appServicePlanResourceGroupName" value="" />
@@ -233,6 +284,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.PipeAndFilter" />
+      <item itemvalue="Azure Spring Apps.Deploy Spring app: APP" />
+      <item itemvalue="Azure Web App.Azure Web App: APP:MuseumApp" />
       <item itemvalue="Azure Web App.Azure Web App: APP:Museodonia" />
       <item itemvalue="Spring Boot.MuseumAppApplication" />
     </list>
@@ -290,7 +343,7 @@
       <workItem from="1703421328560" duration="18000" />
       <workItem from="1703504421258" duration="165000" />
       <workItem from="1703960838315" duration="78000" />
-      <workItem from="1705849105697" duration="5705000" />
+      <workItem from="1705849105697" duration="8274000" />
     </task>
     <servers />
   </component>
