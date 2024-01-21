@@ -21,7 +21,7 @@ public class MuseumAppApplication {
     public static void main(String[] args) {
         SpringApplication.run(MuseumAppApplication.class, args);
 
-        //ONLY UNCCOMENT IF YOU WANNA ADD TO DB
+        //ONLY UNCCOMENT IF YOU WANNA ADD TO DB + ALSO UNCOMMENT IN PipeAndFilter.java
         //PipeAndFilter.main(null);
     }
 }
