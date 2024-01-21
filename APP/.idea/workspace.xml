@@ -28,6 +28,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/ReviewJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/ReviewJPA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/UserJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/Repository/UserJPA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mk/finki/ukim/museumapp/controllers/MuseumsTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +307,7 @@
       <workItem from="1703421328560" duration="18000" />
       <workItem from="1703504421258" duration="165000" />
       <workItem from="1703960838315" duration="78000" />
-      <workItem from="1705849105697" duration="2425000" />
+      <workItem from="1705849105697" duration="2591000" />
     </task>
     <servers />
   </component>
