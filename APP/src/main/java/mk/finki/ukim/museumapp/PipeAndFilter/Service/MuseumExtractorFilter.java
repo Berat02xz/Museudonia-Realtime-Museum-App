@@ -23,7 +23,7 @@ public class MuseumExtractorFilter implements Filter{
     }
 
     @Getter
-    private static List<Museum> museums = new ArrayList<>();
+    private static final List<Museum> museums = new ArrayList<>();
 
 
     /**

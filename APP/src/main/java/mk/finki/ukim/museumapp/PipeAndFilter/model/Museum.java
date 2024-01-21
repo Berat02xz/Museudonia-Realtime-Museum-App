@@ -27,7 +27,6 @@ class Museum {
      * @apiNote Returns a string representation of the object.
      * @implNote This implementation returns a string representation consisting of the name, latitude, longitude, street, email, internetAccess, wikidata, openingHours, phone, fee, charge and website.
      * @since 1.0
-     *
      */
     @Override
     public String toString() {
@@ -51,11 +50,11 @@ class Museum {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name = "name",columnDefinition="VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
+    @Column(name = "name", columnDefinition = "VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
     private String name;
     private double latitude;
     private double longitude;
-    @Column(name = "street",columnDefinition="VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
+    @Column(name = "street", columnDefinition = "VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
     private String street;
     private String email;
     private String internetAccess;

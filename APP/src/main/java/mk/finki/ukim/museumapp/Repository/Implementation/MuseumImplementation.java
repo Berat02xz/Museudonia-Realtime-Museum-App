@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Service
 public class MuseumImplementation implements MuseumService {
- private final MuseumJPA museumJPA;
+    private final MuseumJPA museumJPA;
 
     @Autowired
     public MuseumImplementation(MuseumJPA museumJPA) {
@@ -84,7 +84,7 @@ public class MuseumImplementation implements MuseumService {
      */
     @Override
     public Museum createMuseum(String name, double latitude, double longitude, String street, String email, String internetAccess, String wikidata, String openingHours, String phone, String fee, String charge, String website) {
-        return museumJPA.save(new Museum(name,latitude,longitude,street,email,internetAccess,wikidata,openingHours,phone,fee,charge,website));
+        return museumJPA.save(new Museum(name, latitude, longitude, street, email, internetAccess, wikidata, openingHours, phone, fee, charge, website));
     }
 
     /**

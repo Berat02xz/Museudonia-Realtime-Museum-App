@@ -23,7 +23,7 @@ public class PipeAndFilter {
     public static MuseumJPA museumJPA = null;
 
     public PipeAndFilter(MuseumJPA museumJPA) {
-        this.museumJPA = museumJPA;
+        PipeAndFilter.museumJPA = museumJPA;
     }
 
 

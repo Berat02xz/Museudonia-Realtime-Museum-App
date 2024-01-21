@@ -8,7 +8,7 @@ import java.io.IOException;
 
 //-------JSON FILE READER
 public class JsonFileReaderFilter implements Filter {
-    private Filter nextFilter;
+    private final Filter nextFilter;
 
     public JsonFileReaderFilter(Filter nextFilter) {
         this.nextFilter = nextFilter;

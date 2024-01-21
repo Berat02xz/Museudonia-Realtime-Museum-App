@@ -31,7 +31,7 @@ public class ReviewImplementation implements ReviewService {
     }
 
     /**
-     * @return  A list of Review objects representing reviews.
+     * @return A list of Review objects representing reviews.
      * @apiNote This method returns a list of reviews.
      */
     @Override

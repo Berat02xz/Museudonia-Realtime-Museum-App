@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -89,6 +92,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "spring.configuration.checksum": "02a51466955fff6eee7e766e1d708909",
     "vue.rearranger.settings.migration": "true"
@@ -301,7 +305,7 @@
       <workItem from="1703421328560" duration="18000" />
       <workItem from="1703504421258" duration="165000" />
       <workItem from="1703960838315" duration="78000" />
-      <workItem from="1705849105697" duration="2149000" />
+      <workItem from="1705849105697" duration="2425000" />
     </task>
     <servers />
   </component>
