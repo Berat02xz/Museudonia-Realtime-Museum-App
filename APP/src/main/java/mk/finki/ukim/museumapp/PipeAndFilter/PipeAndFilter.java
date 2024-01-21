@@ -10,6 +10,12 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 
+/**
+ * @version 1.0
+ * @apiNote This class represents a pipe and filter.
+ * @implNote This implementation consists of the museum extractor filter and the json file reader filter.
+ * @since 1.0
+ */
 //MAIN CLASS
 @Component
 public class PipeAndFilter {
@@ -21,6 +27,17 @@ public class PipeAndFilter {
     }
 
 
+    /**
+     * @param args String[]
+     * @apiNote This method is the main method.It processes the args. Takes the museums from the museum extractor filter and prints them.
+     * @implNote This implementation consists of the args. It takes the museums from the museum extractor filter and prints them.
+     * @since 1.0
+     * @see String
+     * @see String[]
+     * @see Museum
+     * @see List
+     * @see MuseumExtractorFilter
+     */
     public static void main(String[] args) {
         Filter museumExtractorFilter = new MuseumExtractorFilter(null);
         Filter jsonFileReaderFilter = new JsonFileReaderFilter(museumExtractorFilter);
