@@ -50,6 +50,11 @@ class Museum {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    /**
+     * @Note This field represents the name of the museum.
+     * @since 1.0
+     * @implNote This implementation consists of the name. Collation is Macedonian_FYROM_90_CI_AS. Without this, the name is not displayed correctly, because of the Macedonian characters.
+     */
     @Column(name = "name", columnDefinition = "VARCHAR(255) COLLATE Macedonian_FYROM_90_CI_AS")
     private String name;
     private double latitude;
