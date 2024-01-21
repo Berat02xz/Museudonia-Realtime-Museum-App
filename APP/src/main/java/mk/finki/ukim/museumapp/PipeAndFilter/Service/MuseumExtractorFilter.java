@@ -8,6 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @version 1.0
+ * @apiNote This class represents a museum extractor filter.
+ * @implNote This implementation consists of the next filter.
+ * @since 1.0
+ */
 //-----MUSEUM DATA EXTRACTOR FROM JSON FILE
 public class MuseumExtractorFilter implements Filter{
     private final Filter nextFilter;
@@ -20,7 +26,17 @@ public class MuseumExtractorFilter implements Filter{
     private static List<Museum> museums = new ArrayList<>();
 
 
-
+    /**
+     * @param input String
+     * @return List<Museum>
+     * @apiNote This method searches the museums in the list of museums. Filters them by name. Returns a list of museums.
+     * @implNote This implementation consists of the input.
+     * @since 1.0
+     *
+     * @deprecated
+     * reason: This method is not used anymore. Data has already been filtered and stored in the database.
+     *
+     */
     public static List<Museum> searchmuseums(String input) {
         List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
@@ -32,6 +48,14 @@ public class MuseumExtractorFilter implements Filter{
         return filteredMuseums;
     }
 
+    /**
+     * @return List<Museum>
+     *     @apiNote This method returns a list of museums.
+     *     @implNote This implementation consists of the museums.
+     *     @since 1.0
+     *     @see Museum
+     *     @deprecated
+     */
     public static List<Museum> getOpenNow() {
         List<Museum> museums = getMuseums();
         List<Museum> filteredMuseums = new ArrayList<>();
@@ -76,6 +100,13 @@ public class MuseumExtractorFilter implements Filter{
         return filteredMuseums;
     }
 
+    /**
+     * @param data Object
+     * @apiNote This method processes the data. Takes tags like name, latitude, longitude, street, email, internetAccess, wikidata, openingHours, phone, fee, charge and website.
+     * @implNote This implementation consists of the data.
+     * @since 1.0
+     * @see MuseumExtractorFilter
+     */
     @Override
     public void process(Object data) {
         JsonNode jsonData = (JsonNode) data;
@@ -96,6 +127,18 @@ public class MuseumExtractorFilter implements Filter{
         }
     }
 
+    /**
+     * @param node JsonNode
+     * @return Museum
+     * @apiNote This method creates a museum.
+     * @implNote This implementation consists of the node.
+     * @since 1.0
+     *
+     * @Note Only Use this when you want to add new fresh list of museums to the database from the export[number].json file.
+     * @see MuseumExtractorFilter
+     * @deprecated
+     *
+     */
     private Museum createMuseum(JsonNode node) {
         JsonNode tags = node.get("tags");
 

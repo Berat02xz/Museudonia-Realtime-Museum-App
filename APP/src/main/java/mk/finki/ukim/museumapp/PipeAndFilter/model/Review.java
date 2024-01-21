@@ -5,6 +5,12 @@ import lombok.Data;
 import lombok.Getter;
 
 
+/**
+ * @version 1.0
+ * @apiNote This class represents a museum.
+ * @implNote This implementation consists of the name, latitude, longitude, street, email, internetAccess, wikidata, openingHours, phone, fee, charge and website.
+ * @since 1.0
+ */
 @Data
 @Entity
 @Table(name = "Reviews")

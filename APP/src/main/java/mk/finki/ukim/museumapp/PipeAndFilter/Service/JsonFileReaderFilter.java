@@ -14,6 +14,13 @@ public class JsonFileReaderFilter implements Filter {
         this.nextFilter = nextFilter;
     }
 
+    /**
+     * @param data Object
+     * @apiNote This method processes the data.
+     * @implNote This implementation consists of the data.
+     * @since 1.0
+     * @see JsonFileReaderFilter
+     */
     @Override
     public void process(Object data) {
         try {

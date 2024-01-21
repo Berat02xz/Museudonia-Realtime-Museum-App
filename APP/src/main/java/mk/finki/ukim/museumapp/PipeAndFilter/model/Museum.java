@@ -5,7 +5,14 @@ import lombok.Data;
 
 import java.util.List;
 
-//MUSEUM CLASS
+
+/**
+ * @version 1.0
+ * @apiNote This class represents a museum.
+ * @implNote This implementation consists of the name, latitude, longitude, street, email, internetAccess, wikidata, openingHours, phone, fee, charge and website.
+ * @since 1.0
+ *
+ */
 @Data
 @Entity
 @Table(name = "Museums")
@@ -15,6 +22,13 @@ class Museum {
 
     }
 
+    /**
+     * @return String
+     * @apiNote Returns a string representation of the object.
+     * @implNote This implementation returns a string representation consisting of the name, latitude, longitude, street, email, internetAccess, wikidata, openingHours, phone, fee, charge and website.
+     * @since 1.0
+     *
+     */
     @Override
     public String toString() {
         return "Museum{" +
@@ -32,6 +46,7 @@ class Museum {
                 ", website='" + website + '\'' +
                 '}';
     }
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

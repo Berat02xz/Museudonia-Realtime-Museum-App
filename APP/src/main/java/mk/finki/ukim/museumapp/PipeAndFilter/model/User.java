@@ -3,6 +3,13 @@ package mk.finki.ukim.museumapp.PipeAndFilter.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+/**
+ * @version 1.0
+ * @apiNote This class represents a user.
+ * @implNote This implementation consists of the username, password, email and role.
+ * @since 1.0
+ * @see User
+ */
 @Data
 @Entity
 @Table(name = "Users")
