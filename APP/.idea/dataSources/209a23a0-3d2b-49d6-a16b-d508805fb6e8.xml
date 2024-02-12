@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="AZURE" family-id="AZURE" format-version="4.51">
     <root id="1">
       <Dbms>AZURE</Dbms>
-      <ServerVersion>12.0.5349</ServerVersion>
+      <ServerVersion>12.0.5409</ServerVersion>
     </root>
     <collation id="2" parent="1" name="Albanian_100_BIN">
       <Description>Albanian-100, binary sort</Description>
@@ -16708,8 +16708,8 @@
     </schema>
     <schema id="5548" parent="5510" name="dbo">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-01-21.17:48:30.610</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-01-21.16:48:30</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2024-02-12.13:07:16.867</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-02-12.12:07:14</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="5549" parent="5510" name="guest">
@@ -16809,7 +16809,7 @@
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(20)</SequenceIdentity>
     </column>
     <column id="5570" parent="5552" name="review">
       <DasType>varchar(255 char)|0s</DasType>

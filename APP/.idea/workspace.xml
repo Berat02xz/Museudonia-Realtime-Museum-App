@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="" />
+    <list default="true" id="45596b6f-7357-4ee5-b975-e989e9ce341d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/209a23a0-3d2b-49d6-a16b-d508805fb6e8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/209a23a0-3d2b-49d6-a16b-d508805fb6e8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,15 +69,15 @@
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/berat/Documents/GitHub/MuseumApp/MuseumApp/Database Backup CSV/reviews.csv",
+    "last_opened_file_path": "C:/Users/berat/OneDrive/Documents/Github/MuseumApp/APP/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "com.microsoft.intellij.AzureConfigurable",
     "spring.configuration.checksum": "02a51466955fff6eee7e766e1d708909",
@@ -80,7 +85,8 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "azure"
+      "azure",
+      "h2"
     ]
   }
 }]]></component>
@@ -92,7 +98,7 @@
       <recent name="C:\Users\berat\Documents\GitHub\MuseumApp\MuseumApp\APP\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Azure Web App.Azure Web App: APP:MuseumApp">
+  <component name="RunManager" selected="Spring Boot.MuseumAppApplication">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -122,6 +128,46 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
+      <option name="appServicePlanName" value="" />
+      <option name="appServicePlanResourceGroupName" value="" />
+      <option name="appSettingsKey" value="8743b74f-b38a-4974-a21f-169410fc3418" />
+      <option name="appSettingsToRemove" />
+      <option name="applicationLogLevel" value="Error" />
+      <option name="artifactIdentifier" />
+      <option name="azureArtifactType" />
+      <option name="creatingAppServicePlan" value="false" />
+      <option name="creatingNew" value="false" />
+      <option name="creatingResGrp" value="false" />
+      <option name="deployToRoot" value="true" />
+      <option name="deployToSlot" value="false" />
+      <option name="enableApplicationLog" value="false" />
+      <option name="enableDetailedErrorMessage" value="false" />
+      <option name="enableFailedRequestTracing" value="false" />
+      <option name="enableWebServerLogging" value="false" />
+      <option name="newSlotConfigurationSource" />
+      <option name="newSlotName" />
+      <option name="openBrowserAfterDeployment" value="true" />
+      <option name="operatingSystem" />
+      <option name="packaging" />
+      <option name="pricing" value="" />
+      <option name="projectBase" value="" />
+      <option name="projectType" value="" />
+      <option name="region" value="" />
+      <option name="resourceGroup" value="" />
+      <option name="slotName" />
+      <option name="slotPanelVisible" value="false" />
+      <option name="subscriptionId" value="" />
+      <option name="targetName" value="" />
+      <option name="targetPath" value="" />
+      <option name="webAppContainer" />
+      <option name="webAppId" value="" />
+      <option name="webAppJavaVersion" />
+      <option name="webAppName" value="" />
+      <option name="webServerLogQuota" value="35" />
+      <option name="webServerRetentionPeriod" />
+      <method v="2" />
     </configuration>
     <configuration name="Deploy Spring app: APP" type="AZURE_SPRING_CLOUD_SUPPORT" factoryName="Deploy Spring Cloud Services">
       <App id="/subscriptions/f2b26f10-e080-45b0-8db3-fd8e249f7740/resourceGroups/FINKISTUDENT/providers/Microsoft.AppPlatform/Spring/museudoniaspring/apps/spring-app-20240121175847" />
@@ -238,51 +284,8 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
       </method>
     </configuration>
-    <configuration default="true" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
-      <option name="appServicePlanName" value="" />
-      <option name="appServicePlanResourceGroupName" value="" />
-      <option name="appSettingsKey" value="8743b74f-b38a-4974-a21f-169410fc3418" />
-      <option name="appSettingsToRemove" />
-      <option name="applicationLogLevel" value="Error" />
-      <option name="artifactIdentifier" />
-      <option name="azureArtifactType" />
-      <option name="creatingAppServicePlan" value="false" />
-      <option name="creatingNew" value="false" />
-      <option name="creatingResGrp" value="false" />
-      <option name="deployToRoot" value="true" />
-      <option name="deployToSlot" value="false" />
-      <option name="enableApplicationLog" value="false" />
-      <option name="enableDetailedErrorMessage" value="false" />
-      <option name="enableFailedRequestTracing" value="false" />
-      <option name="enableWebServerLogging" value="false" />
-      <option name="newSlotConfigurationSource" />
-      <option name="newSlotName" />
-      <option name="openBrowserAfterDeployment" value="true" />
-      <option name="operatingSystem" />
-      <option name="packaging" />
-      <option name="pricing" value="" />
-      <option name="projectBase" value="" />
-      <option name="projectType" value="" />
-      <option name="region" value="" />
-      <option name="resourceGroup" value="" />
-      <option name="slotName" />
-      <option name="slotPanelVisible" value="false" />
-      <option name="subscriptionId" value="" />
-      <option name="targetName" value="" />
-      <option name="targetPath" value="" />
-      <option name="webAppContainer" />
-      <option name="webAppId" value="" />
-      <option name="webAppJavaVersion" />
-      <option name="webAppName" value="" />
-      <option name="webServerLogQuota" value="35" />
-      <option name="webServerRetentionPeriod" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.PipeAndFilter" />
-      <item itemvalue="Azure Spring Apps.Deploy Spring app: APP" />
-      <item itemvalue="Azure Web App.Azure Web App: APP:MuseumApp" />
-      <item itemvalue="Azure Web App.Azure Web App: APP:Museodonia" />
       <item itemvalue="Spring Boot.MuseumAppApplication" />
     </list>
     <recent_temporary>
@@ -294,7 +297,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
@@ -340,6 +343,7 @@
       <workItem from="1703504421258" duration="165000" />
       <workItem from="1703960838315" duration="78000" />
       <workItem from="1705849105697" duration="8592000" />
+      <workItem from="1707739210614" duration="1348000" />
     </task>
     <servers />
   </component>
