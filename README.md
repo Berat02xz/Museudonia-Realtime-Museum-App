@@ -1,8 +1,8 @@
 ![fcse_logo](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/Logo_FINKI_UKIM_EN/Logo_FINKI_UKIM_EN_00000.png)
 
-**Subject:** Software Design and Architecture
+## Subject: Software Design and Architecture
 
-## Brief Description
+**Brief Description:**
 The project we are developing focuses on art galleries in Macedonia, aiming to bring them closer to students and art enthusiasts. We are creating a space for exploring various exhibitions, collections, and cultural experiences offered by these institutions. Our approach is simple and interactive, focusing on essential information and experiences provided by the art galleries.
 
 Through our website, users will have the opportunity to search galleries based on different parameters such as location, type of exhibitions, and period of events. This creates a personalized experience for users, allowing them to discover and explore art spaces that match their interests. We aim to present art galleries as an important part of the cultural landscape in Macedonia and to support local talents and creative initiatives. The project will not only provide information but also experiences that open the doors to the world of art, creating a bridge between artists and art lovers in our community.
