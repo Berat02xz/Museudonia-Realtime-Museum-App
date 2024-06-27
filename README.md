@@ -1,37 +1,40 @@
 ![fcse_logo](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/Logo_FINKI_UKIM_EN/Logo_FINKI_UKIM_EN_00000.png)
 
-**Предмет:** Дизајн и архитектура на софтвер
+**Subject:** Software Design and Architecture
 
-**Краток опис:**
-Проектот што го развиваме се фокусира на уметничките галерии во Македонија, со цел да ги приближиме на студентите и љубителите на уметноста. Креираме простор за истражување на различни изложби, колекции и културни доживувања што ги нудат овие институции. Нашиот пристап е едноставен и интерактивен, со фокус на основни информации и искуства кои ги нудат уметничките галерии.
- Преку нашиот веб-сајт, корисниците ќе имаат можност да пребаруваат галерии според различни параметри како локација, тип на изложби, и период на одржување. Ова создава персонализирано искуство за корисниците, овозможувајќи им да откријат и истражат уметнички простори што одговараат на нивните интереси.
- Сакаме да ги претставиме уметничките галерии како важен дел од културниот пејзаж во Македонија и да ги поддржиме локалните таленти и креативни иницијативи. Проектот не само што ќе обезбеди информации, туку искуства што ги отвораат вратите кон светот на уметноста, креирајќи мост меѓу уметниците и љубителите на уметноста во нашата заедница.
+## Brief Description
+The project we are developing focuses on art galleries in Macedonia, aiming to bring them closer to students and art enthusiasts. We are creating a space for exploring various exhibitions, collections, and cultural experiences offered by these institutions. Our approach is simple and interactive, focusing on essential information and experiences provided by the art galleries.
+
+Through our website, users will have the opportunity to search galleries based on different parameters such as location, type of exhibitions, and period of events. This creates a personalized experience for users, allowing them to discover and explore art spaces that match their interests. We aim to present art galleries as an important part of the cultural landscape in Macedonia and to support local talents and creative initiatives. The project will not only provide information but also experiences that open the doors to the world of art, creating a bridge between artists and art lovers in our community.
 
 ![Gif Animation Of Website Homepage](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/1.gif)
-Проектот е изработен со технологии како Spring Boot framework, Google Maps AI, Java Persistence, Bootstrap и други. Вклучени се опции за филтрирање на барањата за музеите, додавање на оцени и коментари, и преглед на различни информации за музеите. Сите информации се превземени во реално време од OPENSTREETMAP при секое вчитување на веб-страницата.
-Веб-страницата е хостирана на Azure Web Services, со хостирана база на податоци на Azure SQL Server, со колација на македонски јазик.
 
-**Архитектури:** [Документ](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
+The project is developed using technologies such as the Spring Boot framework, Google Maps AI, Java Persistence, Bootstrap, and others. Features include filtering requests for museums, adding ratings and comments, and viewing various information about museums. All information is retrieved in real-time from OPENSTREETMAP each time the website is loaded.
 
-**Дизајн на апликацијата:** [Слики](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
+The website is hosted on Azure Web Services, with the database hosted on Azure SQL Server, with collation in the Macedonian language.
 
- ![Gif Animation Of Website Homepage](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/2.gif)
-Веб-страницата има администраторска контролна табла која му овозможува на администраторот да се најави и да ги менува податоците за музеите, да додава дополнителни информации кои можеби не се достапни во OPENSTREETMAP, и да брише соодветни рецензии. Администраторот исто така има можност да додава нови музеи од почеток и да ги брише старите.
+**Architectures:** [Document](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
 
-**Спецификација на функционалостите и нефункционалностите барање:** [PDF Документ](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%201)
+**Application Design:** [Images](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
 
- ![Gif Animation Of Website Homepage](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/3.gif)
- 
-**Автори:**
+![Gif Animation Of Website Homepage](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/2.gif)
+
+The website features an admin control panel that allows the administrator to log in and update museum data, add additional information that may not be available on OPENSTREETMAP, and delete inappropriate reviews. The administrator can also add new museums from scratch and delete old ones.
+
+**Functional and Non-Functional Specifications:** [PDF Document](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%201)
+
+![Gif Animation Of Website Homepage](https://github.com/BeratAhmetaj/Museudonia/blob/main/Gif%20Animations/3.gif)
+
+## Authors:
 - Andrej Velickovski (211109)
 - Viktor Sibinovikj (195120)
 - Berat Ahmetaj (216130)
 
-**Ментори:** 
-- проф. д-р Љупчо Антовски
-- проф. д-р Петре Ламески
+## Mentors:
+- Prof. Dr. Ljupcho Antovski
+- Prof. Dr. Petre Lameski
 
-**Видео Прототип од алфа верзија на апликацијата:** [Видео](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
+**Video Prototype From The App** [Видео](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%202)
 
-**Видео Прототип од Функционалностите на апликацијата** [Видео](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%203)
+**Video Prototype That Shows Functionalities** [Видео](https://github.com/BeratAhmetaj/MuseumApp/tree/main/HOMEWORK%203)
 
